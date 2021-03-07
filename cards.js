@@ -84,7 +84,7 @@ but.addEventListener("mouseover",()=>{
 
 function weather(city)
 {   
-    fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=f9dda2f825ebf545b17dca6bd31c4dd6")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=f9dda2f825ebf545b17dca6bd31c4dd6")
       .then(response => response.json())
       .then((data) =>{
         console.log(data);
