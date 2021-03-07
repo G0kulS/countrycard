@@ -87,6 +87,7 @@ function weather(city)
     fetch("http://api.openweathermap.org/data/2.5/weather?q="+city+"&appid=f9dda2f825ebf545b17dca6bd31c4dd6")
       .then(response => response.json())
       .then((data) =>{
+        console.log(data);
         let temp = data["main"].temp;
         let feels_like = data["main"].feels_like;
         let temp_min = data["main"].temp_min;
